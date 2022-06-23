@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+    width: 85rem;
+    height: 55rem;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.conteiner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.conteiner .image {
+    width: 15rem;
+    height: 15rem;
+    border: 1px solid #000000;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.conteiner .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.conteiner .image .image-btn {
+    background: #000000;
+    color: #ffffff;
+    position: absolute;
+    top: 95%;
+    left: 55%;
+    transform: translate(-55%, -55%);
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: .3rem;
+    padding: 1rem;
+    opacity: 0;
+    border: none;
+    outline: none;
+}
+
+.conteiner .image .image-btn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 1s linear;
+}
+
+.conteiner .title {
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 20rem;
+}
+
+.conteiner .title span {
+    opacity: 50%;
+    font-size: 2rem;
+}
+
+.conteiner .title p {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.conteiner .icons {
+    margin-top: 5rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.conteiner .icons .btn-icon {
+    font-size: 4rem;
+    padding: 1rem 3.5rem;
+    opacity: 70%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.conteiner .icons .btn-icon i:hover {
+    color: #6eb122;
+    cursor: pointer;
+    transition: all 1s linear;
+    transform: scale(1.5);
+}
+
+/* Responsive */
+@media screen and (max-width: 992px) {
+    .app {
+        width: 60rem;
+        height: 45rem;
+    }
+
+    .conteiner .icons .btn-icon {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .app {
+        width: 35rem;
+        height: 50rem;
+    }
+
+    .conteiner .title p {
+        font-size: 2rem;
+    }
+
+    .conteiner .icons {
+        width: 30rem;
+        height: 10rem;
+        padding: 0;
+        margin-top: 2rem;
+
+    }
+
+    .conteiner .icons .btn-icon {
+        font-size: 2rem;
+    }
 }
