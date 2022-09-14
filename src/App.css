@@ -63,13 +63,13 @@
     border-radius: 5px;
     letter-spacing: .3rem;
     padding: 1rem;
-    opacity: 0;
+    opacity: 0.5;
     border: none;
     outline: none;
 }
 
 .conteiner .image .image-btn:hover {
-    opacity: 0.8;
+    opacity: 0.9;
     cursor: pointer;
     transition: all 1s linear;
 }
